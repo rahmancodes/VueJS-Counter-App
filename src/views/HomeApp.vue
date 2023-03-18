@@ -1,0 +1,84 @@
+<template>
+    <main class='not-found'>
+      <h1 class='heading-main'>Counter App</h1>
+      <p class='home__msg'><b><i>A Simple Counter App built with VueJS that performs Increment, Decrement, Reset functions.</i></b>
+      </p>
+
+       
+        <div class='btn_wrap'> 
+          <button type='button' class='btn'><router-link to="/counter">Counter</router-link> </button>
+          <button type='button' class='btn'><router-link to='https://www.github.com/rahmancodes'>GitHub</router-link> </button>
+        </div>
+
+    </main>
+  </template>
+  
+  <script>
+
+
+  export default {
+    name: 'HomeApp' 
+
+  }; 
+
+
+  </script>
+  
+  <style>
+  /* ... */
+  .not-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: calc(100vh - 80px);
+    width: 98%;
+    margin: 0 auto;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  .heading-main{
+    font-size: 54px;
+    margin-bottom: 16px;
+    text-align: center;
+    font-family: primaryFont;
+    font-weight: bolder;
+  }
+  .home__msg{
+    font-family: secFont;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn_wrap .btn{
+    width: 100px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    filter: drop-shadow(0 0 1em lightblue);
+
+  }
+  .btn a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: primaryFont;
+    color: #42b983;
+
+  }
+
+  /* @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  } */
+  </style>
